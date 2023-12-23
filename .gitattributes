@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*rar filter=lfs diff=lfs merge=lfs -text
+Adding filter=lfs diff=lfs merge=lfs -text
+path filter=lfs diff=lfs merge=lfs -text
+*.rar filter=lfs diff=lfs merge=lfs -text
