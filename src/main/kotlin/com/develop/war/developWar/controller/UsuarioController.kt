@@ -49,4 +49,8 @@ class UsuarioController {
     fun verDadosSalaLobby(@RequestHeader("Authorization") usuario: String?): ResponseEntity<List<DadosRegistroSala>>? {
         return usuarioService?.verDadosSalaLobby(usuario)
     }
+    @DeleteMapping("/deletaSalasLobby")
+    fun deletaSalaLobby(@RequestHeader("Authorization") usuario: String?,@RequestBody usuarioCriador: String?): ResponseEntity<String>? {
+        return usuarioService?.deletaSalaLobby(usuario,usuarioCriador)
+    }
 }

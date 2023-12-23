@@ -41,6 +41,9 @@ class DadosRegistroSala(
     var numeroJogadoresTotais: String? = null,
 
     @Column
-    var servidorDedicado: String? = null
+    var servidorDedicado: String? = null,
+
+    @Column
+    var usuarioCriador: String? = null
 
 ) : Serializable

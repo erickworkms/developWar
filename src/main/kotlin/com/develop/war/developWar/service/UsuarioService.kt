@@ -158,4 +158,27 @@ class UsuarioService {
         }
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null)
     }
+
+    fun deletaSalaLobby(usuario: String?, usuarioCriador: String?): ResponseEntity<String>? {
+
+        val autenticacao = SecurityContextHolder.getContext().authentication
+        val usuarioAutenticacao = verificaToken?.verificaToken(usuario?.replace("Bearer ", ""));
+        if (usuarioAutenticacao != null) {
+            if (autenticacao != null && autenticacao.isAuthenticated() && autenticacao.getPrincipal() !== "anonymousUser") {
+                if (usuarioCriador != null) {
+                    println("Esta é o usuario criador")
+                    println(usuarioCriador)
+                    dadosRegistroSalaRepository?.deleteAllByUsuarioCriador(usuarioCriador)
+                    return ResponseEntity.status(HttpStatus.OK).body("Salas apagadas com sucesso")
+                }
+            } else {
+                SecurityContextLogoutHandler().logout(request, null, null)
+                SecurityContextHolder.getContext().authentication = null
+                session?.invalidate()
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Usuario não autenticado")
+            }
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Usuario não autenticado")
+        }
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Usuario não autenticado")
+    }
 }
