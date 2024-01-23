@@ -8,6 +8,8 @@ O projeto consiste apenas em demonstração do uso da replicação de dados em u
 
 Neste projeto há apenas o executavel .exe do jogo em Unreal c++, o código em C++ está em outro repository, na qual não deixarei publico pela complexidade, mas é possivel testar todas as funções apenas com o executavel e o projeto base em Spring boot com o server.
 
+Link do executavel: https://www.dropbox.com/scl/fi/hdepk0fccpho6f46ihk14/DevLopWarOnline.zip?rlkey=cjapm3l0jobktx3dqfl19p7nd&dl=0
+
 A conexão e criação de salas basea-se em endereços Ips e portas, logo exige ao menos conhecimento em configurar portas ou hospedar o executavel em algum server para teste pela internet, senão o proprio sistema operacional no qual estiver rodando o executavel como server, irá ignorar qualquer conexão de clientes.
 
 A finalidade do projeto é demonstrar que pode-se implementar serviços criados em outras linguagens de programação em conjunto com Unreal C++, como em qualquer App ou software que não tenha a finalidade de jogos, na qual recrutadores e pessoas que não são da area de jogos tem grande dificuldade e preconceito em tentar entender isso, e constantemente agem como se programadores de jogos fossem totalmente inaptos e incapazes de entenderem ou aprenderem algo de outras areas de atuação.
@@ -26,6 +28,8 @@ The project is only a demonstration of data replication usage in an online game 
 
 In this project, there is only the .exe executable of the Unreal C++ game; the C++ code is in another repository, which I will not make public due to its complexity. However, it is possible to test all functions with just the executable and the Spring Boot base project with the server.
 
+Link: https://www.dropbox.com/scl/fi/hdepk0fccpho6f46ihk14/DevLopWarOnline.zip?rlkey=cjapm3l0jobktx3dqfl19p7nd&dl=0
+
 The connection and room creation are based on IP addresses and ports, requiring at least knowledge of configuring ports or hosting the executable on a server for internet testing. Otherwise, the operating system running the executable as a server will ignore any client connections.
 
 The purpose of the project is to demonstrate that services created in other programming languages can be implemented together with Unreal C++, just like in any app or software that is not game-related. Recruiters and individuals outside the gaming industry often struggle with difficulty and prejudice in trying to understand this. They frequently act as if game developers are completely incapable of understanding or learning anything from other fields.
@@ -42,6 +46,8 @@ Unreal Multiplayer Base
 このプロジェクトはUnreal C++のオンラインゲームでのデータ複製の使用をデモンストレーションするだけであり、HTTPメソッド（POST、GET、DELETEなど）を介したサービスのリクエストも行います。
 
 このプロジェクトにはUnreal C++ゲームの実行可能ファイルのみが含まれており、C++コードは別のリポジトリにあり、複雑さのため公開しません。ただし、実行可能ファイルとSpring Bootベースのプロジェクトですべての機能をテストすることができます。
+
+リンク: https://www.dropbox.com/scl/fi/hdepk0fccpho6f46ihk14/DevLopWarOnline.zip?rlkey=cjapm3l0jobktx3dqfl19p7nd&dl=0
 
 接続とルームの作成はIPアドレスとポートに基づいており、少なくともポートの構成または実行可能ファイルをインターネットでテストするためにサーバーにホスティングする知識が必要です。そうでない場合、実行可能ファイルをサーバーとして実行しているオペレーティングシステムはクライアントの接続を無視します。
 
