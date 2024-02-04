@@ -15,7 +15,7 @@ class UsuarioController {
     private val usuarioService: UsuarioService? = null
     @PostMapping("/criarLogin")
     fun criarLogin(@RequestBody dadosUsuario: Usuario?): ResponseEntity<String> {
-        System.out.println("passsou pelo criar login")
+        System.out.println("passou pelo criar login")
         return usuarioService?.criarLogin(dadosUsuario) ?:
         ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("ocorreu um erro nos dados recebidos")
     }
